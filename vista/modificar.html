@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shoiptesz - Tienda en Linea</title>
+</head>
+<body>
+
+<form action="/guardar" method="post">
+    <h1>Actualizar tarjeta</h1>
+    <label>Numero de Tarjeta:</label>
+    <input type="number" size="25" min="0" max="9999999999999999" name="noTarjeta" placeholder="Ingresa el numero de tarjeta" required value="4152478569852536">
+    <br>
+    <label>Saldo:</label>
+    <input type="Number" size="25" min="0" step="1" name="Saldo" placeholder="Ingresa el saldo de la tarjeta" required value="2500">
+    <br>
+    <label>Emisor:</label>
+    <select>
+        <option>Selecciona una opcion</option>
+        <option selected>Mastecard</option>
+        <option>Visa</option>
+        <option>American Express</option>
+    </select>
+    <br>
+    <label>CVC:</label>
+    <input type="Number" min="0" max="999" step="1" name="cvc" placeholder="Ingresa el saldo de la tarjeta" required value="456">
+    <br>
+    <label>Año de Vigencia:</label>
+    <input type="number" max="2025" min="2021" required value="2022">
+    <br>
+    <label>Mes de Vigencia:</label>
+    <input type="text" required name="mesVigencia" value="Octubre">
+    <br>
+    <label>Estatus:</label>
+    <input type="radio" name="estatus" checked>Activo
+    <input type="radio" name="estatus">Cancelada
+    <br>
+    <label>Tipo:</label>
+     <select>
+        <option>Elije una opcion</option>
+        <option selected>Debito </option>
+        <option>Credito</option>
+    </select>
+    <br>
+    <button type="submit">Guardar</button>
+    <a href="/">Regresar</a>
+</form>
+
+</body>
+</html>

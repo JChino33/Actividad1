@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shoiptesz - Tienda en Linea</title>
+</head>
+<body>
+
+<nav>
+    <a href="/modificar">Actualizar Tarjetas</a>
+    <a href="/consultar">Consultar Tarjetas</a>
+    <a href="/eliminar">Eliminar Tarjetas</a>
+
+</nav>
+<form action="/guardar" method="post">
+    <h1>Registro de tarjetas</h1>
+    <label>Numero de Tarjeta:</label>
+    <input type="number" size="25" min="0" max="9999999999999999" name="noTarjeta" placeholder="Ingresa el numero de tarjeta" required>
+    <br>
+    <label>Saldo:</label>
+    <input type="Number" size="25" min="0" step="1" name="Saldo" placeholder="Ingresa el saldo de la tarjeta" required >
+    <br>
+    <label>Emisor:</label>
+    <select>
+        <option>Selecciona una opcion</option>
+        <option>Mastecard</option>
+        <option>Visa</option>
+        <option>American Express</option>
+    </select>
+    <br>
+    <label>CVC:</label>
+    <input type="Number" min="0" max="999" step="1" name="cvc" placeholder="Ingresa el saldo de la tarjeta" required >
+    <br>
+    <label>Año de Vigencia:</label>
+    <input type="number" max="2025" min="2021" required>
+    <br>
+    <label>Mes de Vigencia:</label>
+    <input type="month" required name="mesVigencia">
+    <br>
+    <label>Estatus:</label>
+    <input type="radio" name="estatus">Activo
+    <input type="radio" name="estatus">Cancelada
+    <br>
+    <label>Tipo:</label>
+     <select>
+        <option>Elije una opcion</option>
+        <option>Debito</option>
+        <option>Credito</option>
+    </select>
+    <br>
+    <button type="submit">Guardar</button>
+
+
+</form>
+
+</body>
+</html>
